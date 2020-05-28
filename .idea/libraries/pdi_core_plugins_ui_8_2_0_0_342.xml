@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pdi-core-plugins-ui-8.2.0.0-342">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/pdi-core-plugins-ui-8.2.0.0-342.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

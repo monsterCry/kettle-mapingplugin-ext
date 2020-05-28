@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="kettle-json-plugin-core-8.2.0.0-342">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/kettle-json-plugin-core-8.2.0.0-342.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="kettle-core-8.2.0.0-342">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/kettle-core-8.2.0.0-342.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kettle-dbdialog-8.2.0.0-342.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kettle-engine-8.2.0.0-342.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kettle-log4j-core-8.2.0.0-342.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/kettle-ui-swt-8.2.0.0-342.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/metastore-8.2.0.0-342.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

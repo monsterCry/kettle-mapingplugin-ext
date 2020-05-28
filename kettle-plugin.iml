@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="commons-lang-2.6" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.41-bin" level="project" />
+    <orderEntry type="library" name="launcher" level="project" />
+    <orderEntry type="library" name="kettle-core-8.2.0.0-342" level="project" />
+    <orderEntry type="library" name="swt" level="project" />
+    <orderEntry type="library" name="kettle-json-plugin-core-8.2.0.0-342" level="project" />
+    <orderEntry type="library" name="pdi-core-plugins-ui-8.2.0.0-342" level="project" />
+    <orderEntry type="library" name="dom4j-1.6.1" level="project" />
+    <orderEntry type="library" name="slf4j-log4j12-1.7.7" level="project" />
+    <orderEntry type="library" name="log4j-1.2.14" level="project" />
+    <orderEntry type="library" name="slf4j-api-2.0.0-alpha1" level="project" />
+    <orderEntry type="library" name="pdi-core-plugins-impl-8.2.0.0-342" level="project" />
+  </component>
+</module>

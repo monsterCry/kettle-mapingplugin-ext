@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="kettle-plugin:jar">
+    <output-path>$PROJECT_DIR$/../kettle-schedule/lib</output-path>
+    <root id="archive" name="kettle-plugin.jar">
+      <element id="module-output" name="kettle-plugin" />
+    </root>
+  </artifact>
+</component>
