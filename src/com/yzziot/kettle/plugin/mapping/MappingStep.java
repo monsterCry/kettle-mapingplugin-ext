@@ -53,12 +53,11 @@ public class MappingStep extends BaseStep implements StepInterface {
                 for(Integer fieldindex:fieldIndex.values()) {
                     String key = new String((r[fieldindex] + ""));
                     List<MappingField> field = mapping.get(key);
-                    logDetailed("================================" + key);
+                    logDebug("================================" + key);
                     if(field != null) {
-
                         //如果存在多次映射，则复制数据
                         for(int i = 0; i < field.size(); i++) {
-                            logDetailed("================================" + field.get(i).value);
+                            logDebug("================================" + field.get(i).value);
                             MappingField fs = field.get(i);
                             r[fieldindex] = fs.value;
                             putRow(metaInterface, r);
@@ -68,6 +67,9 @@ public class MappingStep extends BaseStep implements StepInterface {
 
             } catch (Exception e) {
                 e.printStackTrace();
+                for(StackTraceElement es : e.getStackTrace()) {
+                    logDebug(es.getLineNumber() + es.getClassName());
+                }
             }
         }
         return true;
@@ -79,7 +81,7 @@ public class MappingStep extends BaseStep implements StepInterface {
         MappingStepMeta meta = (MappingStepMeta) smi;
         List<StepMeta> from = getTransMeta().findPreviousSteps(this.getStepMeta());
         for(StepMeta stepMeta :from) {
-            logDetailed(stepMeta.getName() + "==============");
+            logDebug(stepMeta.getName() + "==============");
             BlockingRowSet rowSet = new BlockingRowSet(this.getTransMeta().getSizeRowset());
             rowSet.setThreadNameFromToCopy(stepMeta.getName(), 0, this.getStepname(), 0);
             StepInterface stepInterface = getTrans().findRunThread(stepMeta.getName());
@@ -101,7 +103,7 @@ public class MappingStep extends BaseStep implements StepInterface {
         for(String[] str : meta.getMappingField()) {
 
             for(String ss:str) {
-                logDetailed(str + "-------------映射字段-====================----" + ss);
+                logDebug(str + "-------------映射字段-====================----" + ss);
             }
             fieldIndex.put(str[0],0);
         }
@@ -109,7 +111,7 @@ public class MappingStep extends BaseStep implements StepInterface {
         try {
             database.connect();
             ResultSet set = database.openQuery(meta.getSql());
-            logDetailed(meta.getSql());
+            logDebug(meta.getSql());
             while (set.next()) {
                 for(String[] str : meta.getMappingField()) {
                     String key = set.getString(str[1]);
@@ -126,7 +128,7 @@ public class MappingStep extends BaseStep implements StepInterface {
         } catch (Exception e) {
             e.printStackTrace();
             for(StackTraceElement es : e.getStackTrace()) {
-                logDetailed("SQL执行异常"  + meta.getSql() + "--" + es.getLineNumber() + es.getClassName());
+                logDebug("SQL执行异常"  + meta.getSql() + "--" + es.getLineNumber() + es.getClassName());
             }
 
         }
