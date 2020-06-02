@@ -6,6 +6,6 @@ package com.yzziot.kettle.plugin;
  * @Date: 2020/5/30
  * @Modified By:
  */
-public interface ReqParser {
-    Object parseReq(NetCmd cmd);
+public interface ReqParser<T> {
+    T parseReq(NetCmd cmd);
 }

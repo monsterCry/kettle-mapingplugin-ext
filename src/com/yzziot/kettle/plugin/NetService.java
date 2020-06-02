@@ -9,6 +9,4 @@ package com.yzziot.kettle.plugin;
 public interface NetService {
     void start();
     void shutdown();
-    void addReqParser(ReqParser parser);
-
 }
